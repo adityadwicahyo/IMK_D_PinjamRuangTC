@@ -1,0 +1,32 @@
+/*FAQS*/
+.faq{
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.faq_question {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 10px 10px 20px;
+    position: relative;
+}
+.faq.open .faq_question{
+  border-bottom: 1px solid #bbb;
+}
+.faq.open .faq_question::before{
+  display: none;
+}
+.faq.open .faq_question::after{
+  display: block;
+}
+.faq_answer_container {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.faq_answer{
+  padding: 20px;
+}

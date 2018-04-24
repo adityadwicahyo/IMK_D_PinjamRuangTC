@@ -18,3 +18,11 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('main.index');
 });
+
+Route::get('/ruangan', function(){
+	return view('main.ruangan');
+});
+
+Route::get('/ruangan/pinjam/{id}', function(){
+	return view('main.pinjam');
+});
