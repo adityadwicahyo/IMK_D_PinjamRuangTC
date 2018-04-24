@@ -40,12 +40,12 @@
 			<li class="header">MAIN MENU</li>
 
 			<li>
-				<a href="{{url('adminlte/widgets.html')}}">
+				<a href="{{action('RuanganController@viewRuangan')}}">
 					<i class="fas fa-warehouse"></i> <span style="padding-left: 10px">Ruangan</span>
 				</a>
 			</li>
 			<li>
-				<a href="{{url('adminlte/widgets.html')}}">
+				<a href="{{action('PeminjamanController@viewPeminjaman')}}">
 					<i class="fas fa-handshake"></i> <span style="padding-left: 10px">Peminjaman</span>
 					<span class="pull-right-container">
 						<small class="label pull-right bg-green">new</small>
@@ -53,7 +53,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="{{url('adminlte/widgets.html')}}">
+				<a href="{{action('AlurController@viewAlur')}}">
 					<i class="fas fa-file-alt" style="font-size: 17px"></i> <span style="padding-left: 17px">Alur</span>
 				</a>
 			</li>

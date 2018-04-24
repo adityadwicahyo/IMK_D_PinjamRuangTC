@@ -5,7 +5,7 @@ Ruangan
 @endsection
 
 @section('main_menu')
-Ruangan
+<a href="{{action('RuanganController@viewRuangan')}}">Ruangan</a>
 @endsection
 
 {{-- @section('sub_menu')
@@ -13,6 +13,14 @@ Ruangan
 	@endsection --}}
 
 	@section('content')
+
+	@if($errors->any('Success'))
+	<div class="alert alert-success alert-dismissible">
+		<h4><i class="icon fa fa-check"></i> Success!</h4>
+		{{ $errors->first('Success')}}
+	</div>
+	@endif
+
 	<link rel="stylesheet" type="text/css" href="{{url('css/ruangan.css')}}">
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script>
@@ -33,10 +41,10 @@ Ruangan
 	</script>
 	
 
-	<div class="faq">
+	<div class="faq" style="background-color: white">
 		<div class="faq_question">
 			<div>
-				<a href="/ruangan/pinjam/1" class="btn btn-success">Pinjam</a>
+				<a href="{{action('RuanganController@viewPinjam')}}" class="btn btn-success">Pinjam</a>
 				<p style="display: inline-block; padding-left: 10px; font-size: 30px; vertical-align: middle; margin-bottom: 0px">IF-105</p>
 				<p style="display: inline-block; padding-left: 30px; font-size: 25px; vertical-align: middle; margin-bottom: 0px">|</p>
 				<p style="display: inline-block; padding-left: 30px; font-size: 20px; vertical-align: middle; margin-bottom: 0px">Peminjaman<i id="click_list" style="padding: 0px 0px 0px 10px" class="fas fa-angle-right"></i></p>
@@ -56,17 +64,52 @@ Ruangan
 		</div>
 	</div>
 
-	<div class="faq">
-		<div class="faq_question">Question goes here</div>
-		<div class="faq_answer_container">
-			<div class="faq_answer">Answer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes here
+	<div class="faq" style="background-color: white">
+		<div class="faq_question">
+			<div>
+				<a href="{{action('RuanganController@viewPinjam')}}" class="btn btn-success">Pinjam</a>
+				<p style="display: inline-block; padding-left: 10px; font-size: 30px; vertical-align: middle; margin-bottom: 0px">IF-108</p>
+				<p style="display: inline-block; padding-left: 30px; font-size: 25px; vertical-align: middle; margin-bottom: 0px">|</p>
+				<p class=".lebih" style="display: inline-block; padding-left: 30px; font-size: 20px; vertical-align: middle; margin-bottom: 0px">Peminjaman<i id="click_list" style="padding: 0px 0px 0px 10px" class="fas fa-angle-right"></i></p>
 			</div>
 		</div>
 		<div class="faq_answer_container">
-			<div class="faq_answer">Answer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes hereAnswer goes here
+			<div class="faq_answer">
+				<div>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">20 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; vertical-align: middle; margin: 0px; background-color: white">BEMF Basic Media Schooling</p>
+				</div>
+				<div style="margin-top: 10px">
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">20 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; vertical-align: middle; margin: 0px; background-color: white">BEMF Basic Media Schooling</p>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="faq" style="background-color: white">
+		<div class="faq_question">
+			<div>
+				<a href="{{action('RuanganController@viewPinjam')}}" class="btn btn-success">Pinjam</a>
+				<p style="display: inline-block; padding-left: 10px; font-size: 30px; vertical-align: middle; margin-bottom: 0px">Aula</p>
+				<p style="display: inline-block; padding-left: 30px; font-size: 25px; vertical-align: middle; margin-bottom: 0px">|</p>
+				<p class=".lebih" style="display: inline-block; padding-left: 30px; font-size: 20px; vertical-align: middle; margin-bottom: 0px">Peminjaman<i id="click_list" style="padding: 0px 0px 0px 10px" class="fas fa-angle-right"></i></p>
+			</div>
+		</div>
+		<div class="faq_answer_container">
+			<div class="faq_answer">
+				<div>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">20 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; vertical-align: middle; margin: 0px; background-color: white">BEMF Basic Media Schooling</p>
+				</div>
+				<div style="margin-top: 10px">
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">20 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; vertical-align: middle; margin: 0px; background-color: white">BEMF Basic Media Schooling</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script type="text/javascript">
 		$(".faq").click(function() {
 			// $("#ccc").toggle().animate();

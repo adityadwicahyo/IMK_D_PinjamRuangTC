@@ -37,10 +37,10 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
+    <section class="content-header" style="background-color: white; padding: 10px 10px 10px 20px">
+      <h3 style="margin-top: 10px">
         @yield('main_menu') @yield('sub_menu')
-      </h1>
+      </h3>
     </section>
 
     <!-- Main content -->
