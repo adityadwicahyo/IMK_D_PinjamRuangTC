@@ -4,6 +4,10 @@
 Peminjaman
 @endsection
 
+@section('peminjaman_active')
+style="background-color: #576574"
+@endsection
+
 @section('main_menu')
 <a href="{{action('PeminjamanController@viewPeminjaman')}}">Peminjaman</a>
 @endsection

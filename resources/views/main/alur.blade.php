@@ -8,6 +8,10 @@ Alur
 <a href="{{action('AlurController@viewAlur')}}">Alur</a>
 @endsection
 
+@section('alur_active')
+style="background-color: #576574"
+@endsection
+
 @section('content')
 <!-- row -->
 <div class="row">

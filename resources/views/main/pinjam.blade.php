@@ -8,6 +8,10 @@ Ruangan
 <a href="{{action('RuanganController@viewRuangan')}}">Ruangan</a>
 @endsection
 
+@section('ruangan_active')
+style="background-color: #576574"
+@endsection
+
 @section('sub_menu')
 <a href="{{action('RuanganController@viewPinjam')}}">
 	<i class="fas fa-angle-right" style="font-size: 20px; padding: 0px 10px 0px 10px"></i> Pinjam

@@ -39,20 +39,21 @@
 		<ul class="sidebar-menu" data-widget="tree">
 			<li class="header">MAIN MENU</li>
 
-			<li>
+			<li @yield('ruangan_active')>
 				<a href="{{action('RuanganController@viewRuangan')}}">
 					<i class="fas fa-warehouse"></i> <span style="padding-left: 10px">Ruangan</span>
 				</a>
 			</li>
-			<li>
+			<li @yield('peminjaman_active')>
 				<a href="{{action('PeminjamanController@viewPeminjaman')}}">
 					<i class="fas fa-handshake"></i> <span style="padding-left: 10px">Peminjaman</span>
 					<span class="pull-right-container">
-						<small class="label pull-right bg-green">new</small>
+						<small class="label pull-right bg-green">1</small>
+						<small class="label pull-right bg-red">1</small>
 					</span>
 				</a>
 			</li>
-			<li>
+			<li @yield('alur_active')>
 				<a href="{{action('AlurController@viewAlur')}}">
 					<i class="fas fa-file-alt" style="font-size: 17px"></i> <span style="padding-left: 17px">Alur</span>
 				</a>

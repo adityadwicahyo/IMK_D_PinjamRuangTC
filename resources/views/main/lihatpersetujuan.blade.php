@@ -8,6 +8,10 @@ Peminjaman
 <a href="{{action('PeminjamanController@viewPeminjaman')}}">Peminjaman</a>
 @endsection
 
+@section('alur_active')
+style="background-color: #576574"
+@endsection
+
 @section('sub_menu')
 <a href="{{action('PeminjamanController@viewLihatPersetujuan')}}">
 <i class="fas fa-angle-right" style="font-size: 20px; padding: 0px 10px 0px 10px"></i> Lihat Persetujuan

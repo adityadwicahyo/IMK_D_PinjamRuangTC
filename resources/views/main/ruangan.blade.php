@@ -4,6 +4,10 @@
 Ruangan
 @endsection
 
+@section('ruangan_active')
+style="background-color: #576574"
+@endsection
+
 @section('main_menu')
 <a href="{{action('RuanganController@viewRuangan')}}">Ruangan</a>
 @endsection
