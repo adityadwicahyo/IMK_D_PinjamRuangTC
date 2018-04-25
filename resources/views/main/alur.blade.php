@@ -5,7 +5,7 @@ Alur
 @endsection
 
 @section('main_menu')
-Alur
+<a href="{{action('AlurController@viewAlur')}}">Alur</a>
 @endsection
 
 @section('content')

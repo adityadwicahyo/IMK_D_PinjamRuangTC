@@ -18,7 +18,7 @@ Ruangan
 <link rel="stylesheet" type="text/css" href="{{url('css/date.css')}}">
 
 <div class="container">
-	<form action="{{action('RuanganController@postPinjam')}}" method="post">
+	<form id="pinjam-form" action="{{action('RuanganController@postPinjam')}}" method="post">
 		{{ csrf_field() }}
 		<div class="row">
 			<div class="col-md-2">
@@ -29,11 +29,11 @@ Ruangan
 				<h2>Form Peminjaman</h2>
 				<div class="form-group" style="padding: 15px 0px 15px 0px">
 					<label for="email" style="padding-bottom: 5px">Judul Kegiatan</label>
-					<input style="height: 60px" type="text" class="form-control" id="email" placeholder="Masukkan judul kegiatan" name="email">
+					<input style="height: 60px" type="text" class="form-control" id="email" placeholder="Masukkan judul kegiatan" name="judul">
 				</div>
 				<div class="form-group">
 					<label for="pwd" style="padding-bottom: 5px">Deskripsi Kegiatan</label>
-					<textarea style="height: 330px" type="text" class="form-control" id="pwd" placeholder="Tuliskan deskripsi kegiatan" name="pwd"></textarea>
+					<textarea style="height: 330px" type="text" class="form-control" id="pwd" placeholder="Tuliskan deskripsi kegiatan" name="deskripsi"></textarea>
 				</div>
 			</div>
 			<div class="col-md-3">
@@ -63,5 +63,36 @@ Ruangan
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.7.2/angular-translate.js"></script>
 <script type="text/javascript" src="{{url('js/date.js')}}"></script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+
+    $("#pinjam-form").validate({
+        rules: {
+            "judul": {
+                required: true
+            },
+            "deskripsi": {
+                required: true
+            },
+        },
+        submitHandler: function (form) {
+            var formData = $(form).serialize();
+            $.ajax({
+                url: "bs_client_function.php?action=new_b",
+                type: "post",
+                data: formData,
+                beforeSend: function () {
+
+                },
+                success: function (data) {
+
+                }
+            });
+        }
+    });
+
+});
+</script>
 
 @endsection

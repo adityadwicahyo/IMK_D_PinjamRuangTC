@@ -27,4 +27,7 @@ Route::get('/peminjaman','PeminjamanController@viewPeminjaman');
 Route::get('/peminjaman/lihatpermohonan','PeminjamanController@viewLihatPermohonan');
 Route::get('/peminjaman/lihatpersetujuan','PeminjamanController@viewLihatPersetujuan');
 
+Route::get('/logins','LoginController@viewLogin');
+
+
 Route::get('/alur','AlurController@viewAlur');

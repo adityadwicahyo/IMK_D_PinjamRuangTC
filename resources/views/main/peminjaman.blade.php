@@ -5,7 +5,7 @@ Peminjaman
 @endsection
 
 @section('main_menu')
-Peminjaman
+<a href="{{action('PeminjamanController@viewPeminjaman')}}">Peminjaman</a>
 @endsection
 
 @section('content')

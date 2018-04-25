@@ -30,8 +30,8 @@
 				<img src="{{url('adminlte/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
 			</div>
 			<div class="pull-left info">
-				<p>Alexander Pierce</p>
-				<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+				<br>
+				<p>Joko Susilo</p>
 			</div>
 		</div>
 
@@ -59,7 +59,7 @@
 			</li>
 
 			<li class="header">SETTING</li>
-			<li><a href="#"><i class="fas fa-power-off"></i> <span style="padding-left: 10px">Logout</span></a></li>
+			<li><a href="{{action('LoginController@viewLogin')}}"><i class="fas fa-power-off"></i> <span style="padding-left: 10px">Logout</span></a></li>
 		</ul>
 	</section>
 	<!-- /.sidebar -->

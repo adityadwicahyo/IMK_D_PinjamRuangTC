@@ -5,11 +5,13 @@ Peminjaman
 @endsection
 
 @section('main_menu')
-Peminjaman
+<a href="{{action('PeminjamanController@viewPeminjaman')}}">Peminjaman</a>
 @endsection
 
 @section('sub_menu')
+<a href="{{action('PeminjamanController@viewLihatPermohonan')}}">
 <i class="fas fa-angle-right" style="font-size: 20px; padding: 0px 10px 0px 10px"></i> Lihat Permohonan
+</a>
 @endsection
 
 @section('content')
