@@ -29,5 +29,9 @@ Route::get('/peminjaman/lihatpersetujuan','PeminjamanController@viewLihatPersetu
 
 Route::get('/logins','LoginController@viewLogin');
 Route::get('/reset', 'LoginController@viewReset');
+Route::get('/registrasi', 'LoginController@viewRegistrasi');
+Route::get('/reset/konfirmasi', 'LoginController@viewKonfirmasi');
 
 Route::get('/alur','AlurController@viewAlur');
+
+Route::get('/profile','ProfileController@viewProfile');

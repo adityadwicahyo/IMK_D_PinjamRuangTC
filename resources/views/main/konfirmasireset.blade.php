@@ -32,28 +32,18 @@
   <div class="limiter">
     <div class="container-login100">
       <div class="wrap-login100 p-t-50 p-b-90">
-        <form action="/reset/konfirmasi" class="login100-form validate-form flex-sb flex-w">
+        <form action="/" class="login100-form validate-form flex-sb flex-w">
  
           <span class="login100-form-title p-b-51" style="margin-top: -20px; font-size: 20px">
-            Reset Password
+            Konfirmasi Reset Password
           </span>
 
            <div class="container-login100-form-btn m-t-17" align="center" style="padding: 0 0 20px 0">
-            <p style="">Masukkan email Anda untuk mengirim konfirmasi reset password</p>
-          </div>
-          <div class="wrap-input100 m-b-16" style="margin: 0px">
-            <input class="input100" type="email" name="email" placeholder="Email" required>
-            <!-- <span class="focus-input100"></span> -->
-          </div>
-
-          <div class="container-login100-form-btn m-t-17">
-            <button class="login100-form-btn" style="background-color: #10ac84">
-              Kirim Konfirmasi
-            </button>
+            <p style="font-size: 15px">Silahkan cek email <span style="color: #10ac84; font-weight: bold">aditya@gmail.com</span> untuk konfirmasi reset password Anda</p>
           </div>
           <div class="container-login100-form-btn m-t-17">
             <a href="{{action('LoginController@viewLogin')}}" class="login100-form-btn" style="background-color: #1e90ff">
-              <span style="color: white">Batal</span>
+              <span style="color: white">Kembali ke halaman login</span>
             </a>
           </div>
          
@@ -66,7 +56,7 @@
   <div id="dropDownSelect1"></div>
   
 <!--===============================================================================================-->
-  <!-- <script src="{{url('login/vendor/jquery/jquery-3.2.1.min.js')}}"></script> -->
+  <script src="{{url('login/vendor/jquery/jquery-3.2.1.min.js')}}"></script>
 <!--===============================================================================================-->
   <script src="{{url('login/vendor/animsition/js/animsition.min.js')}}"></script>
 <!--===============================================================================================-->
@@ -80,7 +70,7 @@
 <!--===============================================================================================-->
   <script src="{{url('login/vendor/countdowntime/countdowntime.js')}}"></script>
 <!--===============================================================================================-->
-  <!-- <script src="{{url('login/js/main.js')}}"></script> -->
+  <script src="{{url('login/js/main.js')}}"></script>
 
 </body>
 </html>

@@ -13,4 +13,12 @@ class LoginController extends Controller
     public function viewReset(){
     	return view('main.resetpassword');
     }
+
+    public function viewKonfirmasi(){
+    	return view('main.konfirmasireset');
+    }
+
+    public function viewRegistrasi(){
+    	return view('main.registrasi');
+    }
 }

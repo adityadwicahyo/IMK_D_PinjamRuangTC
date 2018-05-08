@@ -1,6 +1,6 @@
 <header class="main-header">
 	<!-- Logo -->
-	<a href="{{url('adminlte/index2.html')}}" class="logo">
+	<a href="{{action('RuanganController@viewRuangan')}}" class="logo">
 		<!-- mini logo for sidebar mini 50x50 pixels -->
 		<span class="logo-mini"><b>SI</b>PR</span>
 		<!-- logo for regular state and mobile devices -->
@@ -25,6 +25,7 @@
 	<!-- sidebar: style can be found in sidebar.less -->
 	<section class="sidebar">
 		<!-- Sidebar user panel -->
+		<a href="{{action('ProfileController@viewProfile')}}">
 		<div class="user-panel">
 			<div class="pull-left image">
 				<img src="{{url('adminlte/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
@@ -34,7 +35,7 @@
 				<p>Joko Susilo</p>
 			</div>
 		</div>
-
+</a>
 		<!-- sidebar menu: : style can be found in sidebar.less -->
 		<ul class="sidebar-menu" data-widget="tree">
 			<li class="header">MAIN MENU</li>

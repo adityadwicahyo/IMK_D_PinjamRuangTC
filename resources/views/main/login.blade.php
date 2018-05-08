@@ -72,8 +72,8 @@
               Login
             </button>
           </div>
-          <div class="container-login100-form-btn m-t-17" align="center">
-            <p>Silahkan <a href="#" style="color: blue">Registrasi</a> apabila belum memiliki akun.</p>
+          <div class="container-login100-form-btn m-t-17" align="center" style="margin-left: 40px">
+            <p>Silahkan <a href="/registrasi" style="color: #2e86de; font-weight: bold">Registrasi</a> apabila belum memiliki akun.</p>
           </div>
         </form>
       </div>
