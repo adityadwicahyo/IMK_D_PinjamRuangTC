@@ -28,6 +28,6 @@ Route::get('/peminjaman/lihatpermohonan','PeminjamanController@viewLihatPermohon
 Route::get('/peminjaman/lihatpersetujuan','PeminjamanController@viewLihatPersetujuan');
 
 Route::get('/logins','LoginController@viewLogin');
-
+Route::get('/reset', 'LoginController@viewReset');
 
 Route::get('/alur','AlurController@viewAlur');

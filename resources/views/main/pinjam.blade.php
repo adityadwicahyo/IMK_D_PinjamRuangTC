@@ -31,13 +31,17 @@ style="background-color: #576574"
 			</div>
 			<div class="col-md-4">
 				<h2>Form Peminjaman</h2>
-				<div class="form-group" style="padding: 15px 0px 15px 0px">
+				<div class="form-group" style="padding: 15px 0px 10px 0px">
 					<label for="email" style="padding-bottom: 5px">Judul Kegiatan</label>
 					<input style="height: 60px" type="text" class="form-control" id="email" placeholder="Masukkan judul kegiatan" name="judul" required>
 				</div>
 				<div class="form-group">
 					<label for="pwd" style="padding-bottom: 5px">Deskripsi Kegiatan</label>
-					<textarea style="height: 330px" type="text" class="form-control" id="pwd" placeholder="Tuliskan deskripsi kegiatan" name="deskripsi" required></textarea>
+					<textarea style="height: 190px" type="text" class="form-control" id="pwd" placeholder="Tuliskan deskripsi kegiatan" name="deskripsi" required></textarea>
+				</div>
+				<div class="form-group" style="margin-top: 25px">
+					<label for="pwd" style="padding-bottom: 5px">Surat Permohonan</label>
+					<input style="" type="file" class="form-control" id="pwd" placeholder="Tuliskan deskripsi kegiatan" name="deskripsi" required></input>
 				</div>
 			</div>
 			<div class="col-md-3">
