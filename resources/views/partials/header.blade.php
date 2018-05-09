@@ -59,8 +59,13 @@
 					<i class="fas fa-file-alt" style="font-size: 17px"></i> <span style="padding-left: 17px">Alur</span>
 				</a>
 			</li>
-			@yield('admin')
-
+			@if(session()->has('email')&&session('email')=="admin@gmail.com")
+				<li @yield('admin_active')>
+					<a href="{{url('admin')}}">
+						<i class="fab fa-black-tie" style="font-size: 17px"></i> <span style="padding-left: 17px">Admin</span>
+					</a>
+				</li>
+			@endif
 			<li class="header">SETTING</li>
 			<li><a href="{{action('LoginController@viewLogin')}}"><i class="fas fa-power-off"></i> <span style="padding-left: 10px">Logout</span></a></li>
 		</ul>

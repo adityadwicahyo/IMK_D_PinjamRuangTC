@@ -4,12 +4,8 @@
 Admin
 @endsection
 
-@section('admin')
-<li style="background-color: #576574">
-	<a href="{{action('AlurController@viewAlur')}}">
-		<i class="fab fa-black-tie" style="font-size: 17px"></i> <span style="padding-left: 17px">Admin</span>
-	</a>
-</li>
+@section('admin_active')
+style="background-color: #576574"
 @endsection
 
 @section('main_menu')
