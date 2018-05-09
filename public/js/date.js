@@ -23,11 +23,11 @@ angular
     minDate: "2018-01-01",
     maxDate: "2018-12-31",
     disabledDates: [
-        "2018-04-22",
-        "2018-07-27",
-        "2018-08-13",
-        "2018-04-15",
-        "2018-04-13"
+        "2018-05-22",
+        "2018-05-27",
+        "2018-05-13",
+        "2018-05-15",
+        "2018-05-13"
     ],
     dayNamesLength: 1, // 1 for "M", 2 for "Mo", 3 for "Mon"; 9 will show full day names. Default is 1.
     mondayIsFirstDay: true,//set monday as first day of week. Default is false

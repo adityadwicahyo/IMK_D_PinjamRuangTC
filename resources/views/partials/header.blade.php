@@ -26,16 +26,16 @@
 	<section class="sidebar">
 		<!-- Sidebar user panel -->
 		<a href="{{action('ProfileController@viewProfile')}}">
-		<div class="user-panel">
-			<div class="pull-left image">
-				<img src="{{url('adminlte/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
+			<div class="user-panel">
+				<div class="pull-left image">
+					<img src="{{url('adminlte/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
+				</div>
+				<div class="pull-left info">
+					<br>
+					<p>Joko Susilo</p>
+				</div>
 			</div>
-			<div class="pull-left info">
-				<br>
-				<p>Joko Susilo</p>
-			</div>
-		</div>
-</a>
+		</a>
 		<!-- sidebar menu: : style can be found in sidebar.less -->
 		<ul class="sidebar-menu" data-widget="tree">
 			<li class="header">MAIN MENU</li>
@@ -60,11 +60,14 @@
 				</a>
 			</li>
 			@if(session()->has('email')&&session('email')=="admin@gmail.com")
-				<li @yield('admin_active')>
-					<a href="{{url('admin')}}">
-						<i class="fab fa-black-tie" style="font-size: 17px"></i> <span style="padding-left: 17px">Admin</span>
-					</a>
-				</li>
+			<li @yield('admin_active')>
+				<a href="{{url('admin')}}">
+					<i class="fab fa-black-tie" style="font-size: 17px"></i> <span style="padding-left: 17px">Admin</span>
+					<span class="pull-right-container">
+						<small class="label pull-right" style="background-color: #3498db">1</small>
+					</span>
+				</a>
+			</li>
 			@endif
 			<li class="header">SETTING</li>
 			<li><a href="{{action('LoginController@viewLogin')}}"><i class="fas fa-power-off"></i> <span style="padding-left: 10px">Logout</span></a></li>

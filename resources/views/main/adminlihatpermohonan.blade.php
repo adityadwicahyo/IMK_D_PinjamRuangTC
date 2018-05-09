@@ -1,19 +1,19 @@
 @extends('layouts.master')
 
 @section('title')
-Peminjaman
+Admin
 @endsection
 
 @section('main_menu')
-<a href="{{action('PeminjamanController@viewPeminjaman')}}">Peminjaman</a>
+<a href="{{action('AdminController@viewAdmin')}}">Admin</a>
 @endsection
 
-@section('peminjaman_active')
+@section('admin_active')
 style="background-color: #576574"
 @endsection
 
 @section('sub_menu')
-<a href="{{action('PeminjamanController@viewLihatPermohonan')}}">
+<a href="{{action('AdminController@viewAdminPermohonan')}}">
 <i class="fas fa-angle-right" style="font-size: 20px; padding: 0px 10px 0px 10px"></i> Lihat Permohonan
 </a>
 @endsection

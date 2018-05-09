@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-Alur
+Profile
 @endsection
 
 @section('main_menu')

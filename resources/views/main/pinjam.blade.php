@@ -35,10 +35,10 @@ style="background-color: #576574"
 					<label for="email" style="padding-bottom: 5px">Judul Kegiatan</label>
 					<input style="height: 60px" type="text" class="form-control" id="email" placeholder="Masukkan judul kegiatan" name="judul" required>
 				</div>
-				<div class="form-group">
+				{{-- <div class="form-group">
 					<label for="pwd" style="padding-bottom: 5px">Deskripsi Kegiatan</label>
 					<textarea style="height: 190px" type="text" class="form-control" id="pwd" placeholder="Tuliskan deskripsi kegiatan" name="deskripsi" required></textarea>
-				</div>
+				</div> --}}
 				<div class="form-group" style="margin-top: 25px">
 					<label for="pwd" style="padding-bottom: 5px">Surat Permohonan</label>
 					<input style="" type="file" class="form-control" id="pwd" placeholder="Tuliskan deskripsi kegiatan" name="deskripsi" required></input>

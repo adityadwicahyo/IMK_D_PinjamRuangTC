@@ -39,7 +39,7 @@
           </span>
 
            <div class="container-login100-form-btn m-t-17" align="center" style="padding: 0 0 20px 0">
-            <p style="font-size: 15px">Silahkan cek email <span style="color: #10ac84; font-weight: bold">aditya@gmail.com</span> untuk konfirmasi reset password Anda</p>
+            <p style="font-size: 15px">Konfirmasi telah kami dikirim. Silahkan cek email <span style="color: #10ac84; font-weight: bold">aditya@gmail.com</span> untuk konfirmasi reset password Anda.</p>
           </div>
           <div class="container-login100-form-btn m-t-17">
             <a href="{{action('LoginController@viewLogin')}}" class="login100-form-btn" style="background-color: #1e90ff">
