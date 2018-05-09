@@ -83,17 +83,10 @@ Profile
 						<hr>
 						<h3 style="margin: 10px 0 20px 35px">Informasi Profil</h3>
 						<div class="form-group">
-							<label for="inputEmail" class="col-sm-3 control-label">Nama Depan</label>
+							<label for="inputEmail" class="col-sm-3 control-label">Nama</label>
 
 							<div class="col-sm-8">
-								<input type="text" class="form-control" id="inputEmail" placeholder="Nama Depan" value="Aditya" required>
-							</div>
-						</div>
-						<div class="form-group" style="margin-top: 30px">
-							<label for="inputEmail" class="col-sm-3 control-label">Nama Belakang</label>
-
-							<div class="col-sm-8">
-								<input type="text" class="form-control" id="inputEmail" placeholder="Nama Belakang" value="Dwicahyo" required>
+								<input type="text" class="form-control" id="inputEmail" placeholder="Nama" value="Joko Susilo" required>
 							</div>
 						</div>
 						<div class="form-group" style="margin-top: 30px">
