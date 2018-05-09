@@ -59,6 +59,7 @@
 					<i class="fas fa-file-alt" style="font-size: 17px"></i> <span style="padding-left: 17px">Alur</span>
 				</a>
 			</li>
+			@yield('admin')
 
 			<li class="header">SETTING</li>
 			<li><a href="{{action('LoginController@viewLogin')}}"><i class="fas fa-power-off"></i> <span style="padding-left: 10px">Logout</span></a></li>

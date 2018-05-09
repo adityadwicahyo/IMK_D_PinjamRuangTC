@@ -22,7 +22,7 @@ style="background-color: #576574"
 <div class="container">
 	<div class="row" style="margin: 20px">
 		<div class="col-md-12" align="center">
-			<button style="font-weight: bold; font-size: 15px" class="btn btn-success"><i class="fas fa-print" style="padding-right: 10px"></i>Cetak Dokumen</button>
+			<button style="font-weight: bold; font-size: 15px" class="btn btn-primary"><i class="fas fa-print" style="padding-right: 10px"></i>Cetak Dokumen</button>
 		</div>
 	</div>
 	<div class="row">

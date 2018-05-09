@@ -34,4 +34,8 @@ Route::get('/reset/konfirmasi', 'LoginController@viewKonfirmasi');
 
 Route::get('/alur','AlurController@viewAlur');
 
+Route::get('/profile/edit','ProfileController@viewEditProfile');
 Route::get('/profile','ProfileController@viewProfile');
+Route::post('/profile','ProfileController@postEditProfile');
+
+Route::get('/admin','AdminController@viewAdmin');

@@ -20,8 +20,9 @@ style="background-color: #576574"
 
 	@if($errors->any('Success'))
 	<div class="alert alert-success alert-dismissible">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 		<h4><i class="icon fa fa-check"></i> Success!</h4>
-		{{ $errors->first('Success')}}
+		{{ $errors->first('Success')}} Silahkan menuju menu <a style="font-weight: bold" href="/peminjaman">Peminjaman</a> untuk perkembangan permohonan pinjam ruang Anda.
 	</div>
 	@endif
 
@@ -48,7 +49,7 @@ style="background-color: #576574"
 	<div class="faq" style="background-color: white">
 		<div class="faq_question">
 			<div>
-				<a href="{{action('RuanganController@viewPinjam')}}" class="btn btn-success">Pinjam</a>
+				<a href="{{action('RuanganController@viewPinjam')}}" class="btn btn-primary">Pinjam</a>
 				<p style="display: inline-block; padding-left: 10px; font-size: 30px; vertical-align: middle; margin-bottom: 0px">IF-105</p>
 				<p style="display: inline-block; padding-left: 30px; font-size: 25px; vertical-align: middle; margin-bottom: 0px">|</p>
 				<p style="display: inline-block; padding-left: 30px; font-size: 20px; vertical-align: middle; margin-bottom: 0px">Peminjaman<i id="click_list" style="padding: 0px 0px 0px 10px" class="fas fa-angle-right"></i></p>
@@ -71,7 +72,7 @@ style="background-color: #576574"
 	<div class="faq" style="background-color: white">
 		<div class="faq_question">
 			<div>
-				<a href="{{action('RuanganController@viewPinjam')}}" class="btn btn-success">Pinjam</a>
+				<a href="{{action('RuanganController@viewPinjam')}}" class="btn btn-primary">Pinjam</a>
 				<p style="display: inline-block; padding-left: 10px; font-size: 30px; vertical-align: middle; margin-bottom: 0px">IF-108</p>
 				<p style="display: inline-block; padding-left: 30px; font-size: 25px; vertical-align: middle; margin-bottom: 0px">|</p>
 				<p class=".lebih" style="display: inline-block; padding-left: 30px; font-size: 20px; vertical-align: middle; margin-bottom: 0px">Peminjaman<i id="click_list" style="padding: 0px 0px 0px 10px" class="fas fa-angle-right"></i></p>
@@ -94,7 +95,7 @@ style="background-color: #576574"
 	<div class="faq" style="background-color: white">
 		<div class="faq_question">
 			<div>
-				<a href="{{action('RuanganController@viewPinjam')}}" class="btn btn-success">Pinjam</a>
+				<a href="{{action('RuanganController@viewPinjam')}}" class="btn btn-primary">Pinjam</a>
 				<p style="display: inline-block; padding-left: 10px; font-size: 30px; vertical-align: middle; margin-bottom: 0px">Aula</p>
 				<p style="display: inline-block; padding-left: 30px; font-size: 25px; vertical-align: middle; margin-bottom: 0px">|</p>
 				<p class=".lebih" style="display: inline-block; padding-left: 30px; font-size: 20px; vertical-align: middle; margin-bottom: 0px">Peminjaman<i id="click_list" style="padding: 0px 0px 0px 10px" class="fas fa-angle-right"></i></p>

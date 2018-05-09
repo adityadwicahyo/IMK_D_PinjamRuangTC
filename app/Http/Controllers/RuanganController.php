@@ -14,7 +14,7 @@ class RuanganController extends Controller
     	return view('main.pinjam');
     }
     public function postPinjam(){
-    	return redirect('/ruangan')->withErrors(array('Success' => 'Berhasil mengajukan permohonan peminjaman. Silahkan pilih menu Peminjaman untuk perkembangan permohonan pinjam ruang Anda.
+    	return redirect('/ruangan')->withErrors(array('Success' => 'Berhasil mengajukan permohonan peminjaman.
     	'));
     }
 }

@@ -1,0 +1,108 @@
+.intl-tel {
+  position: relative;
+  width: 250px;
+}
+
+.intl-tel, .intl-tel * {
+  box-sizing: border-box;
+}
+
+.intl-tel_input[type=text] {
+  height: 26px;
+  width: 100%;
+  padding-left: 64px;
+  padding-top: 1px;
+}
+
+.intl-tel_code {
+  position: absolute;
+  height: 24px;
+  left: 1px;
+  top: 1px;
+  bottom: 1px;
+  width: 56px;
+  padding-right: 14px;
+  padding-left: 4px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: #888;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.intl-tel_code:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  height: 100%;
+  width: 12px;
+  background-image: url(https://www.certify.com/images/16_carat-down-no-frame.png);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .65;
+}
+
+.intl-tel_list {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+}
+
+.intl-tel_option {
+  padding-left: 12px;
+}
+
+.intl-tel_option-code {
+  display: inline-block;
+  color: #aaa;
+  padding-left: 6px;
+}
+
+.menu-list {
+  display: none;
+  list-style-type: none;
+  height: 190px;
+  padding-left: 0;
+  margin-left: 0;
+  -webkit-padding-start: 0;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  overflow-y: scroll;
+}
+
+.menu-list li {
+  width: 100%;
+  margin-left: 0;
+}
+
+.menu-list.is-showing {
+  display: block;
+}
+
+.menu-list_divider {
+  margin: 2px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.menu-list_item {
+  height: 26px;
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 26px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+.menu-list_item.is-selected {
+  background: #f4f4f4;
+}
+
+.menu-list_item.is-highlighted {
+  background: #e7e7e7;
+}
