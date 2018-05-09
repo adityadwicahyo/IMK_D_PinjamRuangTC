@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('layouts.master');
 });
 
+Route::post('/','LoginController@dologin');
+
 Route::get('/test', function () {
     return view('main.index');
 });

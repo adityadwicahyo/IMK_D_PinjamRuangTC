@@ -21,4 +21,16 @@ class LoginController extends Controller
     public function viewRegistrasi(){
     	return view('main.registrasi');
     }
+
+    public function dologin(Request $r)
+    {
+        if($r->username=="admin@gmail.com")
+        {
+            return redirect('/admin');
+        }
+        else
+        {
+            return redirect('/');
+        }
+    }
 }

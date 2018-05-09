@@ -32,7 +32,7 @@
   <div class="limiter">
     <div class="container-login100">
       <div class="wrap-login100 p-t-50 p-b-90">
-        <form action="/" class="login100-form validate-form flex-sb flex-w">
+        <form action="/" class="login100-form validate-form flex-sb flex-w" method="POST">
           <span class="login100-form-title p-b-51">
             Selamat Datang
           </span>
@@ -51,7 +51,7 @@
             <input class="input100" type="password" name="pass" placeholder="Password" required>
             <span class="focus-input100"></span>
           </div>
-          
+          {{csrf_field()}}
           <div class="flex-sb-m w-full p-t-3 p-b-24">
             <div class="contact100-form-checkbox">
               <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
