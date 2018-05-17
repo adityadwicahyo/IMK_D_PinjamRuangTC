@@ -5,7 +5,7 @@ Profile
 @endsection
 
 @section('main_menu')
-<a href="{{action('ProfileController@viewProfile')}}">Profile</a>
+<a href="{{action('ProfileController@viewProfile')}}">Profil</a>
 @endsection
 
 @section('sub_menu')

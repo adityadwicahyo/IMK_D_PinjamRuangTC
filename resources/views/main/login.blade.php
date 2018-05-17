@@ -55,13 +55,13 @@
             <div class="contact100-form-checkbox">
               <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
               <label class="label-checkbox100" for="ckb1">
-                Remember me
+                Ingat saya
               </label>
             </div>
 
             <div>
               <a href="{{action('LoginController@viewReset')}}" class="txt1">
-                Forgot?
+                Lupa password?
               </a>
             </div>
           </div>

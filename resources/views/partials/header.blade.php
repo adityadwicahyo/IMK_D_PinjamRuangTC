@@ -49,8 +49,12 @@
 				<a href="{{action('PeminjamanController@viewPeminjaman')}}">
 					<i class="fas fa-handshake"></i> <span style="padding-left: 10px">Peminjaman</span>
 					<span class="pull-right-container">
-						<small class="label pull-right bg-green">1</small>
-						<small class="label pull-right bg-red">1</small>
+						@if ($notification->setuju > 0)
+						    <small class="label pull-right bg-green">{{$notification->setuju}}</small>
+						@endif
+						@if ($notification->tolak > 0)
+						    <small class="label pull-right bg-red">{{$notification->tolak}}</small>
+						@endif
 					</span>
 				</a>
 			</li>
@@ -62,9 +66,11 @@
 			@if(session()->has('email')&&session('email')=="admin@gmail.com")
 			<li @yield('admin_active')>
 				<a href="{{url('admin')}}">
-					<i class="fab fa-black-tie" style="font-size: 17px"></i> <span style="padding-left: 17px">Admin</span>
+					<i class="fab fa-black-tie" style="font-size: 17px"></i> <span style="padding-left: 17px">Persetujuan</span>
 					<span class="pull-right-container">
+						@if ($notification->tunggu > 0)
 						<small class="label pull-right" style="background-color: #3498db">1</small>
+						@endif
 					</span>
 				</a>
 			</li>

@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Notification;
 
-class AlurController extends Controller
+class HomeController extends Controller
 {
-    public function viewAlur(){
+    public function viewHome(){
     	$notification = Notification::whereId(1)->first();
-		return view('main.alur', ['notification' => $notification]);
+		return view('main.home', ['notification' => $notification]);
     }
 }

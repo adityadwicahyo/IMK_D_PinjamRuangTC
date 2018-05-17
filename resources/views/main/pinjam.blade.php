@@ -41,7 +41,7 @@ style="background-color: #576574"
 				</div> --}}
 				<div class="form-group" style="margin-top: 25px">
 					<label for="pwd" style="padding-bottom: 5px">Surat Permohonan</label>
-					<input style="" type="file" class="form-control" id="pwd" placeholder="Tuliskan deskripsi kegiatan" name="deskripsi" required></input>
+					<input style="" type="file" accept="application/pdf, image/png, image/jpg" class="form-control" id="pwd" placeholder="Tuliskan deskripsi kegiatan" name="deskripsi" required></input>
 				</div>
 			</div>
 			<div class="col-md-3">
@@ -75,32 +75,32 @@ style="background-color: #576574"
 <script type="text/javascript">
 	$(document).ready(function () {
 
-    $("#pinjam-form").validate({
-        rules: {
-            "judul": {
-                required: true
-            },
-            "deskripsi": {
-                required: true
-            },
-        },
-        submitHandler: function (form) {
-            var formData = $(form).serialize();
-            $.ajax({
-                url: "bs_client_function.php?action=new_b",
-                type: "post",
-                data: formData,
-                beforeSend: function () {
+		$("#pinjam-form").validate({
+			rules: {
+				"judul": {
+					required: true
+				},
+				"deskripsi": {
+					required: true
+				},
+			},
+			submitHandler: function (form) {
+				var formData = $(form).serialize();
+				$.ajax({
+					url: "bs_client_function.php?action=new_b",
+					type: "post",
+					data: formData,
+					beforeSend: function () {
 
-                },
-                success: function (data) {
+					},
+					success: function (data) {
 
-                }
-            });
-        }
-    });
+					}
+				});
+			}
+		});
 
-});
+	});
 </script>
 
 @endsection

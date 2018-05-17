@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('main.home');
-});
+// Route::get('/', function () {
+//     return view('main.home');
+// });
+
+Route::get('/','HomeController@viewHome');
 
 Route::post('/','LoginController@dologin');
 
@@ -41,4 +43,5 @@ Route::get('/profile','ProfileController@viewProfile');
 Route::post('/profile','ProfileController@postEditProfile');
 
 Route::get('/admin','AdminController@viewAdmin');
+Route::post('/admins','AdminController@postKonfirmasi');
 Route::get('/admin/permohonan','AdminController@viewAdminPermohonan');

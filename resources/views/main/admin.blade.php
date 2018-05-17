@@ -1,5 +1,4 @@
 @extends('layouts.master')
-
 @section('title')
 Admin
 @endsection
@@ -26,9 +25,9 @@ style="background-color: #576574"
 <div id="myBtnContainer" style="margin-left: 10px">
 	<h4 style="font-weight: bold">Filter :</h4>
 	<button class="btn btn-default active" onclick="filterSelection('all')"> Show all</button>
-	<button class="btn btn-primary" onclick="filterSelection('tunggu')"> Menunggu Persetujuan</button>
 	<button class="btn btn-success" onclick="filterSelection('setuju')"> Telah Disetuju</button>
 	<button class="btn btn-danger" onclick="filterSelection('tolak')"> Ditolak</button>
+	<button class="btn btn-primary" onclick="filterSelection('tunggu')"> Menunggu Persetujuan</button>
 	<button class="btn btn-default" style="background-color: grey; color: white" onclick="filterSelection('selesai')"> Selesai</button>
 	<hr style="border-color: #bdc3c7">
 </div>
@@ -138,7 +137,11 @@ style="background-color: #576574"
 				<p>Apakah Anda yakin <span style="color: green; font-weight: bold">menyetujui</span> permohonan peminjaman ini?</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Ya</button>
+				<form action="/admins" method="post">
+					{{ csrf_field() }}
+					<input type="hidden" value="setuju" name="konfirmasi">
+					<button type="submit" class="btn btn-default">Ya</button>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -156,7 +159,11 @@ style="background-color: #576574"
 				<p>Apakah Anda yakin <span style="color: red; font-weight: bold">menolak</span> permohonan peminjaman ini?</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Ya</button>
+				<form action="/admins" method="post">
+					{{ csrf_field() }}
+					<input type="hidden" value="tolak" name="konfirmasi">
+					<button type="submit" class="btn btn-default">Ya</button>
+				</form>
 			</div>
 		</div>
 	</div>
