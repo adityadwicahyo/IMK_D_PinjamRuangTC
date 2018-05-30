@@ -40,6 +40,14 @@ style="background-color: #576574"
 					<textarea style="height: 190px" type="text" class="form-control" id="pwd" placeholder="Tuliskan deskripsi kegiatan" name="deskripsi" required></textarea>
 				</div> --}}
 				<div class="form-group" style="margin-top: 25px">
+					<label for="pwd" style="padding-bottom: 5px">Jam Mulai</label>
+					<input type="time" name=""  class="form-control" required>
+				</div>
+				<div class="form-group" style="margin-top: 25px">
+					<label for="pwd" style="padding-bottom: 5px">Jam Akhir</label>
+					<input type="time" name=""  class="form-control" required>
+				</div>
+				<div class="form-group" style="margin-top: 25px">
 					<label for="pwd" style="padding-bottom: 5px">Surat Permohonan</label>
 					<input style="" type="file" accept="application/pdf, image/png, image/jpg" class="form-control" id="pwd" placeholder="Tuliskan deskripsi kegiatan" name="deskripsi" required></input>
 				</div>

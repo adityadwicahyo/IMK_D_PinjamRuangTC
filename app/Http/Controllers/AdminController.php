@@ -29,4 +29,13 @@ class AdminController extends Controller
         $notification = Notification::whereId(1)->first();
         return view('main.admin', ['notification' => $notification]);
     }
+    public function viewEditAdminPermohonan(){
+        $notification = Notification::whereId(1)->first();
+        return view('main.admineditpermohonan', ['notification' => $notification]);
+    }
+    public function postAdminPermohonan()
+    {
+        return redirect('/admin')->withErrors(array('Success' => 'Berhasil mengedit permohonan peminjaman.
+        '));
+    }
 }

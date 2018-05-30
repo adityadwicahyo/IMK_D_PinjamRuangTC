@@ -58,11 +58,13 @@ style="background-color: #576574"
 		<div class="faq_answer_container">
 			<div class="faq_answer">
 				<div>
-					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">20 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: gray">20 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: green;">10.00-12.00</p>
 					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; vertical-align: middle; margin: 0px; background-color: white">BEMF Basic Media Schooling</p>
 				</div>
 				<div style="margin-top: 10px">
-					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">20 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: gray">21 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: green">10.00-12.00</p>
 					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; vertical-align: middle; margin: 0px; background-color: white">BEMF Basic Media Schooling</p>
 				</div>
 			</div>
@@ -82,10 +84,12 @@ style="background-color: #576574"
 			<div class="faq_answer">
 				<div>
 					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">20 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: green">10.00-12.00</p>
 					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; vertical-align: middle; margin: 0px; background-color: white">BEMF Basic Media Schooling</p>
 				</div>
 				<div style="margin-top: 10px">
-					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">20 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">21 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: green">10.00-12.00</p>
 					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; vertical-align: middle; margin: 0px; background-color: white">BEMF Basic Media Schooling</p>
 				</div>
 			</div>
@@ -105,10 +109,12 @@ style="background-color: #576574"
 			<div class="faq_answer">
 				<div>
 					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">20 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: green">10.00-12.00</p>
 					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; vertical-align: middle; margin: 0px; background-color: white">BEMF Basic Media Schooling</p>
 				</div>
 				<div style="margin-top: 10px">
-					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">20 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: grey">21 Mei 2018</p>
+					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; font-weight: bold; color: white; vertical-align: middle; margin-bottom: 0px; background-color: green">10.00-12.00</p>
 					<p style="display: inline-block; padding: 10px 10px 10px 10px; font-size: 15px; vertical-align: middle; margin: 0px; background-color: white">BEMF Basic Media Schooling</p>
 				</div>
 			</div>

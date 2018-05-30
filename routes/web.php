@@ -45,3 +45,5 @@ Route::post('/profile','ProfileController@postEditProfile');
 Route::get('/admin','AdminController@viewAdmin');
 Route::post('/admins','AdminController@postKonfirmasi');
 Route::get('/admin/permohonan','AdminController@viewAdminPermohonan');
+Route::get('/admin/edit/permohonan','AdminController@viewEditAdminPermohonan');
+Route::post('/admin/edit/permohonan','AdminController@postAdminPermohonan');

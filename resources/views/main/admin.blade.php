@@ -21,7 +21,13 @@ style="background-color: #576574"
 	display: block;
 }
 </style>
-
+@if($errors->any('Success'))
+<div class="alert alert-success alert-dismissible">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	<h4><i class="icon fa fa-check"></i> Success!</h4>
+	{{ $errors->first('Success')}}
+</div>
+@endif
 <div id="myBtnContainer" style="margin-left: 10px">
 	<h4 style="font-weight: bold">Filter :</h4>
 	<button class="btn btn-default active" onclick="filterSelection('all')"> Show all</button>
@@ -41,6 +47,7 @@ style="background-color: #576574"
 		<hr style="margin: 5px 0px 2px 0px">
 		<p style="font-size: 25px; vertical-align: middle; margin-bottom: 0px">IF-105</p>
 		<p style="font-size: 15px; vertical-align: middle; margin-bottom: 0px">21 Mei 2018</p>
+		<p style="font-size: 10px; vertical-align: middle; margin-bottom: 0px">10.00-11.00</p>
 	</div>
 	<div style="display: inline-block; padding-left: 20px">
 		<p style="font-size: 25px; margin-bottom: 0px; padding-bottom: 10px">Pelatihan Laravel HMTC</p>
@@ -64,6 +71,7 @@ style="background-color: #576574"
 		<hr style="margin: 5px 0px 2px 0px">
 		<p style="font-size: 25px; vertical-align: middle; margin-bottom: 0px">Aula</p>
 		<p style="font-size: 15px; vertical-align: middle; margin-bottom: 0px">21 Mei 2018</p>
+		<p style="font-size: 10px; vertical-align: middle; margin-bottom: 0px">10.00-11.00</p>
 	</div>
 	<div style="display: inline-block; padding-left: 20px">
 		<p style="font-size: 25px; vertical-align: middle; margin-bottom: 0px; padding-bottom: 10px">Pelatihan Laravel HMTC</p>
@@ -87,13 +95,15 @@ style="background-color: #576574"
 		<hr style="margin: 5px 0px 2px 0px">
 		<p style="font-size: 25px; vertical-align: middle; margin-bottom: 0px">IF-105</p>
 		<p style="font-size: 15px; vertical-align: middle; margin-bottom: 0px">21 Mei 2018</p>
+		<p style="font-size: 10px; vertical-align: middle; margin-bottom: 0px">10.00-11.00</p>
 	</div>
 	<div style="display: inline-block; padding-left: 20px">
 		<p style="font-size: 25px; vertical-align: middle; margin-bottom: 0px; padding-bottom: 10px">Pelatihan Laravel HMTC</p>
 		<p style="font-size: 17px; vertical-align: middle; margin-bottom: 0px; font-weight: bold">Status : <span style="color: #3498db"><i class="far fa-clock"></i> Menunggu Persetujuan</span></p>
 	</div>
 	<div style="float: right; padding-top: 5px">
-		<a href="{{action('AdminController@viewAdminPermohonan')}}" class="btn btn-primary" style="margin: 5px">Lihat Permohonan</a>
+		<a href="{{action('AdminController@viewAdminPermohonan')}}" class="btn btn-primary" style="margin: 5px">Lihat Permohonan</a><br>
+		<a href="{{url('/admin/edit/permohonan')}}" class="btn btn-info" style="margin: 5px">Edit Permohonan</a>
 		<br>
 		{{-- <form> --}}
 			<button class="btn btn-success" style="margin: 5px;" data-toggle="modal" data-target="#setujuModal">Setujui</button>
@@ -110,6 +120,7 @@ style="background-color: #576574"
 		<hr style="margin: 5px 0px 2px 0px">
 		<p style="font-size: 25px; vertical-align: middle; margin-bottom: 0px">IF-105</p>
 		<p style="font-size: 15px; vertical-align: middle; margin-bottom: 0px">21 Mei 2018</p>
+		<p style="font-size: 10px; vertical-align: middle; margin-bottom: 0px">10.00-11.00</p>
 	</div>
 	<div style="display: inline-block; padding-left: 20px">
 		<p style="font-size: 25px; vertical-align: middle; margin-bottom: 0px; padding-bottom: 10px">Pelatihan Laravel HMTC</p>

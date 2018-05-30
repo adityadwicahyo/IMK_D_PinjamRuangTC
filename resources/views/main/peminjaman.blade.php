@@ -37,6 +37,7 @@ style="background-color: #576574"
 	<div style="display: inline-block; background-color: #27ae60; padding: 15px; color: white" class="setuju">
 		<p style="font-size: 30px; vertical-align: middle; margin-bottom: 0px">IF-105</p>
 		<p style="font-size: 20px; vertical-align: middle; margin-bottom: 0px">21 Mei 2018</p>
+		<p style="font-size: 20px; vertical-align: middle; margin-bottom: 0px">10.00-11.00</p>
 	</div>
 	<div style="display: inline-block; padding-left: 20px">
 		<p style="font-size: 25px; vertical-align: middle; margin-bottom: 0px; padding-bottom: 10px">Pelatihan Laravel HMTC</p>
@@ -52,6 +53,7 @@ style="background-color: #576574"
 	<div style="display: inline-block; background-color: #e74c3c; padding: 15px; color: white">
 		<p style="font-size: 30px; vertical-align: middle; margin-bottom: 0px">Aula</p>
 		<p style="font-size: 20px; vertical-align: middle; margin-bottom: 0px">21 Mei 2018</p>
+		<p style="font-size: 20px; vertical-align: middle; margin-bottom: 0px">10.00-11.00</p>
 	</div>
 	<div style="display: inline-block; padding-left: 20px">
 		<p style="font-size: 25px; vertical-align: middle; margin-bottom: 0px; padding-bottom: 10px">Pelatihan Laravel HMTC</p>
@@ -67,6 +69,7 @@ style="background-color: #576574"
 	<div style="display: inline-block; background-color: #3498db; padding: 15px; color: white">
 		<p style="font-size: 30px; vertical-align: middle; margin-bottom: 0px">IF-105</p>
 		<p style="font-size: 20px; vertical-align: middle; margin-bottom: 0px">21 Mei 2018</p>
+		<p style="font-size: 20px; vertical-align: middle; margin-bottom: 0px">10.00-11.00</p>
 	</div>
 	<div style="display: inline-block; padding-left: 20px">
 		<p style="font-size: 25px; vertical-align: middle; margin-bottom: 0px; padding-bottom: 10px">Pelatihan Laravel HMTC</p>
@@ -82,6 +85,7 @@ style="background-color: #576574"
 	<div style="display: inline-block; background-color: #bdc3c7; padding: 15px; color: white">
 		<p style="font-size: 30px; vertical-align: middle; margin-bottom: 0px">IF-105</p>
 		<p style="font-size: 20px; vertical-align: middle; margin-bottom: 0px">21 Mei 2018</p>
+		<p style="font-size: 20px; vertical-align: middle; margin-bottom: 0px">10.00-11.00</p>
 	</div>
 	<div style="display: inline-block; padding-left: 20px">
 		<p style="font-size: 25px; vertical-align: middle; margin-bottom: 0px; padding-bottom: 10px">Pelatihan Laravel HMTC</p>
